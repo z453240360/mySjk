@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bussiness.main.HomeActivity">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#B2B2B2" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.dd.mylibrary.wedget.MyRadioButton
+            android:id="@+id/rb_home"
+            style="@style/menu_tab"
+            android:checked="true"
+            android:tag="0"
+            android:text="主页"
+            app:rbDrawableTop="@drawable/selector_home_bg" />
+
+
+        <com.dd.mylibrary.wedget.MyRadioButton
+            android:id="@+id/rb_classification"
+            style="@style/menu_tab"
+            android:text="分类"
+            android:tag="1"
+            app:rbDrawableTop="@drawable/selector_home_bg" />
+
+
+        <com.dd.mylibrary.wedget.MyRadioButton
+            android:id="@+id/rb_mime"
+            style="@style/menu_tab"
+            android:tag="2"
+            android:text="我的"
+            app:rbDrawableTop="@drawable/selector_home_bg" />
+    </RadioGroup>
+</LinearLayout>

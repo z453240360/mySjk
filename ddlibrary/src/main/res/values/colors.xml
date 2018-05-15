@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="global_line_color">#E6E4EA</color>
+    <color name="basicColor">#00a0e9</color>
+    <color name="theme_color">#9000B8</color>
+    <color name="color_B2B2B2">#B2B2B2</color>
+    <color name="ad_color_yellow">#9000B8</color>
+    <color name="gray_cd">#cdcdcd</color>
+</resources>

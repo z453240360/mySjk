@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 修改toolbar背景 设置activity主题即可--><!-- PS:include需要加id的 请与Toolbar id保持一致(toolbar)-->
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    app:contentInsetStart="0dp">
+
+    <com.dd.mylibrary.wedget.DrawableCenterTextView
+        android:id="@+id/tv_left"
+        android:minWidth="@dimen/title_height"
+        style="?attr/toolbarNavigationButtonStyle"
+        android:textColor="?android:textColorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp" />
+
+    <com.dd.mylibrary.wedget.DrawableCenterTextView
+        android:id="@+id/home_left"
+        android:visibility="gone"
+        android:minWidth="@dimen/title_height"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        style="?attr/toolbarNavigationButtonStyle"
+        android:textColor="?android:textColorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp" />
+
+    <com.dd.mylibrary.wedget.DrawableCenterTextView
+        android:minWidth="@dimen/title_height"
+        style="?attr/toolbarNavigationButtonStyle"
+        android:textColor="?android:textColorPrimary"
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.dd.mylibrary.wedget.DrawableCenterTextView
+        android:minWidth="@dimen/title_height"
+        style="?attr/toolbarNavigationButtonStyle"
+        android:textColor="#333333"
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp" />
+
+</android.support.v7.widget.Toolbar>
+

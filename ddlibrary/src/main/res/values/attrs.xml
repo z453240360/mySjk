@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    sources>
+    <declare-styleable name="XTabLayout">
+        <attr name="xTabIndicatorHeight" format="dimension"/>
+        <attr name="xTabIndicatorWidth" format="dimension"/>
+        <attr name="xTabIndicatorColor" format="color"/>
+        <attr name="xTabPadding" format="dimension"/>
+        <attr name="xTabPaddingStart" format="dimension"/>
+        <attr name="xTabPaddingTop" format="dimension"/>
+        <attr name="xTabPaddingEnd" format="dimension"/>
+        <attr name="xTabPaddingBottom" format="dimension"/>
+        <attr name="xTabTextAppearance" format="reference"/>
+        <attr name="xTabTextColor" format="color"/>
+        <attr name="xTabSelectedTextColor" format="color"/>
+        <attr name="xTabMinWidth" format="dimension"/>
+        <attr name="xTabMaxWidth" format="dimension"/>
+        <attr name="xTabBackgroundColor" format="reference|color"/>
+        <attr name="xTabSelectedBackgroundColor" format="reference|color"/>
+        <attr name="xTabContentStart" format="dimension"/>
+        <attr name="xTabMode">
+            <enum name="scrollable" value="0x00000000" />
+            <enum name="fixed" value="0x00000001" />
+        </attr>
+        <attr name="xTabGravity" format="integer"/>
+
+        <attr name="xTabTextSize" format="dimension"/>
+        <attr name="xTabTextBold" format="boolean"/>
+        <attr name="xTabSelectedTextSize" format="dimension"/>
+        <attr name="xTabTextSelectedBold" format="boolean"/>
+        <attr name="xTabDisplayNum" format="integer"/>
+        <attr name="xTabTextAllCaps" format="boolean"/>
+
+
+        <attr name="xTabDividerHeight" format="dimension"/>
+        <attr name="xTabDividerWidth" format="dimension"/>
+        <attr name="xTabDividerWidthWidthText" format="boolean"/>
+        <attr name="xTabDividerColor" format="color"/>
+        <attr name="xTabDividerGravity">
+            <enum name="top" value="0x00000000" />
+            <enum name="center" value="0x00000001" />
+            <enum name="bottom" value="0x00000002" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WaveSideBar">
+        <attr name="sidebar_lazy_respond" format="boolean"/>
+        <attr name="sidebar_text_size" format="dimension"/>
+        <attr name="sidebar_text_color" format="color"/>
+        <attr name="sidebar_max_offset" format="dimension"/>
+        <attr name="sidebar_position" format="enum">
+            <enum name="right" value="0"/>
+            <enum name="left" value="1"/>
+        </attr>
+        <attr name="sidebar_text_alignment" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!-- Google风格圆形View 属性设置-->
+    <declare-styleable name="GoogleCircleProgressView">
+        <attr name="gcp_inner_radius" format="dimension" />
+        <attr name="gcp_background_color" format="color" />
+        <attr name="gcp_progress_color" format="color" />
+        <attr name="gcp_progress_stoke_width" format="dimension" />
+        <attr name="gcp_show_arrow" format="boolean" />
+        <attr name="gcp_enable_circle_background" format="boolean" />
+        <attr name="gcp_arrow_width" format="dimension" />
+        <attr name="gcp_arrow_height" format="dimension" />
+
+        <attr name="gcp_progress" format="integer" />
+        <attr name="gcp_max" format="integer" />
+
+        <attr name="gcp_progress_text_size" format="dimension" />
+        <attr name="gcp_progress_text_color" format="color" />
+
+        <!--<attr name="gcp_progress_text_offset" format="dimension"/>-->
+
+        <attr name="gcp_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyRadioButton">
+        <attr name="rbDrawableSize" format="dimension" />
+        <attr name="rbDrawableTop" format="reference" />
+        <attr name="rbDrawableLeft" format="reference" />
+        <attr name="rbDrawableRight" format="reference" />
+        <attr name="rbDrawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="StepView">
+        <attr name="lineheight" format="dimension"></attr>
+        <attr name="smallradius" format="dimension"></attr>
+        <attr name="largeradius" format="dimension"></attr>
+        <attr name="undonecolor" format="color"></attr>
+        <attr name="donecolor" format="color"></attr>
+        <attr name="totalstep" format="integer"></attr>
+        <attr name="completestep" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PwdInputController">
+        <attr name="lineColor" format="color|reference" />
+        <attr name="inputCount" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LoadingLayout">
+        <attr name="isFirstVisible" format="boolean"></attr>
+    </declare-styleable>
+
+    <!--圆形图片-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+    </declare-styleable>
+    <!-- 任意圆角ImageView -->
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <!-- ************************************************ -->
+    <declare-styleable name="ArcImageView">
+        <attr name="arcHeight" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollBanner">
+        <attr name="myorientation">
+            <enum name="horizontal" value="1" />
+            <enum name="vertical" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordView">
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordPadding" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="cursorFlashTime" format="integer" />
+        <attr name="isCursorEnable" format="boolean" />
+        <attr name="cipherEnable" format="boolean" />
+        <attr name="cursorColor" format="color" />
+        <attr name="mode" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="UpdateProgressBar">
+        <attr name="update_text_size" format="dimension"/>
+        <attr name="update_unreached_color" format="color|reference"/>
+        <attr name="update_reached_color" format="color|reference"/>
+        <attr name="update_text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MSGCountTimeView">
+        <attr name="inittext" format="string" />
+        <attr name="prefixruntext" format="string" />
+        <attr name="suffixruntext" format="string" />
+        <attr name="finishtext" format="string" />
+        <attr name="totaltime" format="integer" />
+        <attr name="onetime" format="integer" />
+        <attr name="timecolor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="MineCommonView">
+        <attr name="text_mine_common" />
+        <attr name="img_mine_common" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ProGressView">
+        <attr name="main_color" format="reference|color" />
+        <attr name="out_color" format="color" />
+        <attr name="pro" format="float" />
+    </declare-styleable>
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="VerificationCodeView">
+        <!--输入框的数量-->
+        <attr name="icv_et_number" format="integer" />
+        <!--输入框的宽度-->
+        <attr name="icv_et_width" format="dimension|reference" />
+        <!--输入框之间的分割线-->
+        <attr name="icv_et_divider_drawable" format="reference" />
+        <!--输入框文字颜色-->
+        <attr name="icv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="icv_et_text_size" format="dimension|reference" />
+        <!--输入框获取焦点时边框-->
+        <attr name="icv_et_bg_focus" format="reference" />
+        <!--输入框没有焦点时边框-->
+        <attr name="icv_et_bg_normal" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LuckyMonkeyPanelView">
+        <attr name="img" format="reference" />
+        <attr name="txt" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerViewBannerBase">
+        <attr name="interval" format="integer"/>
+        <attr name="showIndicator" format="boolean"/>
+        <attr name="indicatorSelectedSrc" format="color|reference"/>
+        <attr name="indicatorUnselectedSrc" format="color|reference"/>
+        <attr name="indicatorSpace" format="dimension|reference"/>
+        <attr name="indicatorMarginLeft" format="dimension|reference"/>
+        <attr name="indicatorMarginRight" format="dimension|reference"/>
+        <attr name="indicatorMarginBottom" format="dimension|reference"/>
+        <attr name="indicatorGravity" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="autoPlaying" format="boolean"/>
+    </declare-styleable>
+</resources>
