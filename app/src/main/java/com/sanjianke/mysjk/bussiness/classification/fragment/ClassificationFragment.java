@@ -39,7 +39,6 @@ public class ClassificationFragment extends BaseFragment<ClassificationPresenter
     LinearLayout llStatus;
     @BindView(R.id.mTxt_titie)
     TextView mTxtTitie;
-    Unbinder unbinder2;
 
     private ClassificationAdapter adapter;
     private List<ClassificationBean> mDates = new ArrayList<>();
@@ -114,17 +113,4 @@ public class ClassificationFragment extends BaseFragment<ClassificationPresenter
 
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO: inflate a fragment view
-        View rootView = super.onCreateView(inflater, container, savedInstanceState);
-        unbinder2 = ButterKnife.bind(this, rootView);
-        return rootView;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder2.unbind();
-    }
 }

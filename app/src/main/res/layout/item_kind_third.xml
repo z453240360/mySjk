@@ -10,7 +10,9 @@
         app:cardElevation="2dp"
         android:padding="@dimen/dimen_5dp"
         app:cardCornerRadius="@dimen/dimen_5dp"
-        android:layout_margin="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
         android:layout_height="wrap_content">
         <LinearLayout
             android:orientation="horizontal"
@@ -27,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
-                    android:text="标题党"
+                    android:text="标题党3"
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:gravity="center"

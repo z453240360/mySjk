@@ -44,6 +44,9 @@ public class StatusBarUtils {
      */
 
     public static void setColor(Activity activity, @ColorInt int color, int statusBarAlpha) {
+
+        deleteDark(activity);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -60,6 +63,7 @@ public class StatusBarUtils {
             }
             setRootView(activity);
         }
+
     }
 
     /**
@@ -534,6 +538,21 @@ public class StatusBarUtils {
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             activity.getWindow()
                     .setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+    }
+
+    /**
+     * 去掉7.0 灰色状态栏蒙尘
+     */
+
+    public static void deleteDark(Activity activity){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+            try {
+                Class decorViewClazz = Class.forName("com.android.internal.policy.DecorView");
+                Field field = decorViewClazz.getDeclaredField("mSemiTransparentStatusBarColor");
+                field.setAccessible(true);
+                field.setInt(activity.getWindow().getDecorView(), Color.TRANSPARENT);  //改为透明
+            } catch (Exception e) {}
         }
     }
 

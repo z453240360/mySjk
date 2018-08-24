@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ZxingActivity">
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zxingview"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/basicColor"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_maskColor="#80000000"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@color/basicColor"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_topOffset="180dp" />
+    <EditText
+        android:textColor="#000000"
+        android:hint="显示结果"
+        android:padding="@dimen/dimen_10dp"
+        android:id="@+id/mEd_result"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:text="请扫描用户端二维码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_above="@id/mEd_result"
+        android:id="@+id/mBtn_light"
+        android:text="打开闪光灯"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_above="@id/mEd_result"
+        android:layout_alignParentRight="true"
+        android:id="@+id/mBtn_tesst"
+        android:text="关闭闪光灯"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_above="@id/mEd_result"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/mBtn_light"
+        android:id="@+id/mBtn_start"
+        android:text="扫描"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

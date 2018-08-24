@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical"
+    android:padding="@dimen/dimen_10dp"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:background="#ffffff"
+    android:elevation="@dimen/dimen_5dp"
+    android:id="@+id/mLinear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:src="@mipmap/touxiang"
+        android:layout_width="@dimen/dimen_80dp"
+        android:layout_height="@dimen/dimen_80dp" />
+
+    <TextView
+        tools:text="沧海一身小"
+        android:layout_weight="1"
+        android:id="@+id/mTxt_musicName"
+        android:textSize="@dimen/dimen_18sp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        tools:text="时间多长：10分钟"
+        android:id="@+id/mTxt_musicSize"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <CheckBox
+        android:visibility="visible"
+        android:id="@+id/mCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

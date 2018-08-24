@@ -56,11 +56,12 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
     public String token;
     private TimePickerView pvTime;
     public boolean isCheckToken = true;
-
+    public boolean isNeedPermison = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        StatusBarUtils.deleteDark(this);
         setContentView(getLayoutId());
         ButterKnife.bind(this);
         AppManager.getInstance().addActivity(this);
@@ -71,6 +72,22 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         } catch (Exception e) {
 
         }
+
+
+        if (isNeedPermison) {
+            requestPermissions(permissions, new PermissionsListener() {
+                @Override
+                public void onGranted() {
+
+                }
+
+                @Override
+                public void onDenied(List<String> deniedPermissions, boolean isNeverAsk) {
+
+                }
+            });
+        }
+
         if (userInfoBean == null) {
             userInfoBean = new UserInfoBean();
         }
@@ -81,7 +98,6 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
 
         TAG = "dd";
     }
-
 
 
     //获取布局文件
@@ -97,6 +113,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
     public void initStatusBar() {
         //层垫式状态栏
         StatusBarUtils.setColor(this, getResources().getColor(R.color.white), 0);
+
         ColorState.StatusBarLightMode(mActivity, "");
     }
 

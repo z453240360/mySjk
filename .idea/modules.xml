@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/ddlibrary/ddlibrary.iml" filepath="$PROJECT_DIR$/ddlibrary/ddlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySjk.iml" filepath="$PROJECT_DIR$/mySjk.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
     </modules>
   </component>
 </project>

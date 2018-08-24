@@ -31,9 +31,9 @@ public class ClassificationAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     public LayoutInflater mInflater;
     public List<ClassificationBean> mDatas;
     //有几种类型
-    private static final int TYPE_FIRST = 1;
-    private static final int TYPE_SECOND = 2;
-    private static final int TYPE_THIRD = 3;
+    private static final int TYPE_FIRST = 0;
+    private static final int TYPE_SECOND = 1;
+    private static final int TYPE_THIRD = 2;
 
     public ClassificationAdapter(Context context, List<ClassificationBean> datas) {
         this.mContext = context;
@@ -54,9 +54,9 @@ public class ClassificationAdapter extends RecyclerView.Adapter<RecyclerView.Vie
          * 比赛状态：1--结束，2--未开赛，3，进行中
          */
         String type = mDatas.get(position).getStatues() + "";
-        if ("3".equals(type)) {
+        if ("0".equals(type)) {
             return TYPE_FIRST;
-        } else if ("2".equals(type)) {
+        } else if ("1".equals(type)) {
             return TYPE_SECOND;
         } else {
             return TYPE_THIRD;

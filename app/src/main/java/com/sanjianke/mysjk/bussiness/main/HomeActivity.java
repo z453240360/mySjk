@@ -22,6 +22,7 @@ import butterknife.BindView;
 
 
 public class HomeActivity extends BaseActivity<MainPresenter> implements MainContract.View {
+
     @BindView(R.id.container)
     FrameLayout container;
     @BindView(R.id.group)
@@ -36,6 +37,7 @@ public class HomeActivity extends BaseActivity<MainPresenter> implements MainCon
 
     @Override
     public int getLayoutId() {
+        isNeedPermison = true;
         return R.layout.activity_home;
     }
 
@@ -85,9 +87,6 @@ public class HomeActivity extends BaseActivity<MainPresenter> implements MainCon
         });
 
     }
-
-
-
 
     @Override
     public void main() {
