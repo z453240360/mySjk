@@ -5,8 +5,9 @@ import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.common.commonlib.utils.LogUtils;
-import com.common.http.RetroUtils;
+
+import com.dd.mylibrary.http.retrofit.RetroUtils;
+import com.dd.mylibrary.utils.LogUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
